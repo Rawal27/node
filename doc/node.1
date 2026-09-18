@@ -62,7 +62,7 @@ Attempts to do so will throw an \fBERR_DLOPEN_DISABLED\fR unless the
 user explicitly passes the \fB--allow-addons\fR flag when starting Node.js.
 Example:
 .Bd -literal
-// Attempt to require an native addon
+// Attempt to require a native addon
 require('nodejs-addon-example');
 .Ed
 .Bd -literal
@@ -387,7 +387,7 @@ The snapshot currently only supports loading a single entrypoint during the
 snapshot building process, which can load built-in modules, but not additional user-land modules.
 Users can bundle their applications into a single script with their bundler
 of choice before building a snapshot.
-As it's complicated to ensure the serializablility of all built-in modules,
+As it's complicated to ensure the serializability of all built-in modules,
 which are also growing over time, only a subset of the built-in modules are
 well tested to be serializable during the snapshot building process.
 The Node.js core test suite checks that a few fairly complex applications
